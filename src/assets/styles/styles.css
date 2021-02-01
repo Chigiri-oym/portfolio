@@ -1,0 +1,29 @@
+
+ * {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #696969;
+    background-color: #95A5A7;
+  }
+  
+ 
+h1 {
+    font-size: 3.6rem;
+    font-weight: bold;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(145deg, #7F8C8E, #ABBEC0);
+    border-radius: 15%;
+    box-shadow: 8.71px 8.71px 6px #839193, -8.71px -8.71px 6px #A7B9BB;
+}
+
+.card-content a {
+   text-decoration: none;
+   font-size: 2.4em;
+   font-weight: bold;
+}

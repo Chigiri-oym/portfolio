@@ -1,12 +1,11 @@
 <template>
   <div>
         <h1>Welcome to Chigiri's Portfolio</h1>
-    <ul>
-      <li><a href="/#/about"  rel="noopener">About Me</a></li>
-      <li><a href="/#/skills"  rel="noopener">Skills</a></li>
-      <li><a href="/#/projects"  rel="noopener">Projects</a></li>
-      <li><a href="/#/works" rel="noopener">Works</a></li>
-    </ul>
+    <div class="card" v-for="(card, index) in cards" :key="index">
+      <div class="card-content">
+      <a v-bind:href="card.url">{{card.title}}</a>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,6 +15,29 @@
 // todo card化してurlと画像パスとtitleを渡すだけにする
 
 export default {
-  name: 'Top'
+  name: 'Top',
+  data() {
+    return {
+      cards :[
+        {
+          title: "About", 
+          url:"/#/about"
+        },
+        {
+          title: "Skills", 
+          url:"/#/skills"
+        },
+        {
+          title: "Projects", 
+          url:"/#/projects"
+        },
+        {
+          title: "Works", 
+          url:"/#/works"
+        }
+      
+      ]
+    }
+  }
 }
 </script>
