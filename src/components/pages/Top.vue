@@ -1,39 +1,46 @@
 <template>
   <div>
-        <h1>Welcome to Chigiri's Portfolio</h1>
-    <div class="card" v-for="(card, index) in cards" :key="index">
-      <div class="card-content">
-      <a v-bind:href="card.url">{{card.title}}</a>
-      </div>
+    <h1>Welcome to Chigiri's Portfolio</h1>
+    <div class="container">
+    <top-card class="card" 
+              v-for="(card, index) in cards" 
+              :card="card"
+              :key="index">
+    </top-card>
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-// import Top from '@/components/HelloWorld.vue'
-// todo card化してurlと画像パスとtitleを渡すだけにする
+import TopCard from '../molecules/TopCard.vue'
 
 export default {
   name: 'Top',
+  components: {
+    TopCard
+  },
   data() {
     return {
       cards :[
         {
           title: "About", 
-          url:"/#/about"
+          url:"/#/about",
+          icon:"user-circle"
         },
         {
           title: "Skills", 
-          url:"/#/skills"
+          url:"/#/skills",
+          icon:"cogs"
         },
         {
           title: "Projects", 
-          url:"/#/projects"
+          url:"/#/projects",
+          icon:"list-alt"
         },
         {
           title: "Works", 
-          url:"/#/works"
+          url:"/#/works",
+          icon:"briefcase"
         }
       
       ]
