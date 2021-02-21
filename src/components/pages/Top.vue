@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <h1>Welcome to Chigiri's Portfolio</h1>
+  <div class="main">
+    <h1>Chigiri's Portfolio</h1>
+    <p>Chigiriのポートフォリオサイト</p>
     <div class="container">
     <top-card class="card" 
               v-for="(card, index) in cards" 
