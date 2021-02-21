@@ -1,7 +1,7 @@
 <template>
     <div class="header">
         <div class="header_logo">
-        Chigiri's Portfolio
+        C's
         </div>
         <div class="header-icons">
            <font-awesome-icon icon="bars" size="2x" class="navi-icon" 
@@ -11,11 +11,11 @@
         </div>
        <nav>
         <ul :class="{'open': isActive}">
-        <router-link  to="/" exact><li>Top</li></router-link>
-        <router-link  to="/about"><li>About</li></router-link>
-        <router-link  to="/skills"><li>Skills</li></router-link>
-        <router-link  to="/projects"><li>Projects</li></router-link>
-        <router-link  to="/works"><li>Works</li></router-link>
+        <router-link  to="/" @click.native="toggleButton()" exact><li>Top</li></router-link>
+        <router-link  to="/about" @click.native="toggleButton()"><li>About</li></router-link>
+        <router-link  to="/skills" @click.native="toggleButton()"><li>Skills</li></router-link>
+        <router-link  to="/projects" @click.native="toggleButton()"><li>Projects</li></router-link>
+        <router-link  to="/works" @click.native="toggleButton()"><li>Works</li></router-link>
       </ul>
       </nav>
     </div>

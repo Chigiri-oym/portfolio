@@ -25,22 +25,22 @@ export default {
       cards :[
         {
           title: "About", 
-          url:"/#/about",
+          url:"/about",
           icon:"user-circle"
         },
         {
           title: "Skills", 
-          url:"/#/skills",
+          url:"/skills",
           icon:"cogs"
         },
         {
           title: "Projects", 
-          url:"/#/projects",
+          url:"/projects",
           icon:"list-alt"
         },
         {
           title: "Works", 
-          url:"/#/works",
+          url:"/works",
           icon:"briefcase"
         }
       

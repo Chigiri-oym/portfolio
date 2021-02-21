@@ -280,7 +280,7 @@ h1 {
 
 .table-content a:hover {
   text-decoration: none;
-  color: #abbec0;
+  color: #e0e0e0;
   background-color: #2a2a2a;
   box-shadow: 5px 0px 3px 2px #2a2a2a;
 }
@@ -308,7 +308,7 @@ th {
   }
 
   th {
-    color: #abbec0;
+    color: #e0e0e0;
     background-color: #2a2a2a;
   }
 

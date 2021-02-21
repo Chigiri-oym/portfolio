@@ -1,10 +1,10 @@
 <template>
   <div>
-      <a v-bind:href="card.url">{{card.title}}
+      <router-link  v-bind:to="card.url">{{card.title}}
         <div class="icon-box">
          <font-awesome-icon :icon="card.icon" size="2x"></font-awesome-icon>
         </div>
-      </a>
+      </router-link>
   </div>
 </template>
 
