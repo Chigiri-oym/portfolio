@@ -15,8 +15,8 @@
   padding: 1em;
   box-shadow: 8.71px 8.71px 6px #bebebe, -8.71px -8.71px 6px #ffffff;
   margin-bottom: 2em;
-  grid-template-columns: repeat(1, 450px);
-  width: 450px;
+  grid-template-columns: repeat(1, 600px);
+  width: 600px;
   gap: 50px;
   margin-top: 2em;
   justify-content: center;

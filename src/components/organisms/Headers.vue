@@ -1,7 +1,6 @@
 <template>
     <div class="header">
         <div class="header_logo">
-        C's
         </div>
         <div class="header-icons">
            <font-awesome-icon icon="bars" size="2x" class="navi-icon" 
