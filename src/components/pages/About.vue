@@ -73,7 +73,7 @@ export default {
         {
         key: 'お問い合わせ',
         value: 'Google Form',
-        link: ''
+        link: 'https://docs.google.com/forms/d/e/1FAIpQLSfgzXIcl44j6_PYIZtqwZzNsxshL49gG7UGk93tA32dv2_uCw/viewform'
       }
     ],
     message: `私立文系大学国際系学部卒業後、新卒で中規模SIerに入社。

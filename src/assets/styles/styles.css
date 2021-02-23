@@ -151,7 +151,6 @@ h1 {
 }
 .card {
   height: 200px;
-  border-radius: 10%;
   box-shadow: 8.71px 8.71px 6px #bebebe, -8.71px -8.71px 6px #ffffff;
   position: relative;
 }
@@ -173,7 +172,6 @@ h1 {
   width: 100%;
   font-size: 3.2rem;
   font-weight: bolder;
-  border-radius: 10%;
 }
 
 .icon-box {
@@ -184,7 +182,6 @@ h1 {
   left: 0;
   height: 60%;
   width: 100%;
-  border-radius: 10%;
 }
 
 @media screen and (max-width: 896px) and (orientation: landscape) {
@@ -192,29 +189,21 @@ h1 {
     font-size: 2.8rem;
     font-weight: bold;
     margin-top: 0em;
-    color: #2a2a2a;
-    background-color: #e0e0e0;
   }
 
   .container {
-    display: grid;
     grid-template-columns: repeat(4, 180px);
     grid-auto-rows: minmax(180px, auto);
     gap: 20px;
-    justify-content: center;
-    align-self: center;
     margin-top: 2em;
   }
+  
   .card {
-    height: 180px;
-    border-radius: 10%;
-    box-shadow: 8.71px 8.71px 6px #bebebe, -8.71px -8.71px 6px #ffffff;
-    position: relative;
+    height: 125px;
   }
 
   .card a {
     font-size: 2em;
-    top: 20;
   }
 }
 
@@ -222,30 +211,30 @@ h1 {
   h1 {
     font-size: 1.8rem;
     font-weight: bold;
-    margin-top: 0em;
+    margin-top: 0.5em;
     color: #2a2a2a;
     background-color: #e0e0e0;
   }
   .container {
-    display: grid;
     grid-template-columns: repeat(1, 200px);
     grid-auto-rows: minmax(100px, auto);
     gap: 30px;
-    justify-content: center;
-    align-self: center;
-    margin-top: 1.2em;
+    margin-top: 2em;
   }
 
   .card {
     height: 100px;
-    border-radius: 10%;
-    box-shadow: 8.71px 8.71px 6px #bebebe, -8.71px -8.71px 6px #ffffff;
-    position: relative;
   }
 
   .card a {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    padding: 0.1em;
   }
+
+  .icon-box svg  {
+    margin-top: 0.25em;
+  }
+
 }
 
 /**
@@ -256,7 +245,6 @@ h1 {
 }
 
 .my-icon {
-  border-radius: 10%;
   box-shadow: -1px -1px 2px 0px #bebebe, 1px 1px 2px 0px #ffffff;
   height: 150px;
   margin-top: 1em;
@@ -299,22 +287,25 @@ th {
   .table-content {
     white-space: normal;
     font-size: 1.2em;
-    padding: 0em;
+    padding: 0.25em;
     text-align: justify;
   }
 
   table {
     margin-top: 1em;
+    border:1px solid #2a2a2a;
   }
 
   th {
     color: #e0e0e0;
     background-color: #2a2a2a;
+    font-size: 1em;
   }
 
-  td,
-  th {
+  td {
     border-bottom: 1px solid #2a2a2a;
+    text-align: left;
+    font-size: 1em;
   }
 }
 
@@ -334,7 +325,6 @@ th {
 
 .card-wrapper {
   height: 400px;
-  border-radius: 10%;
   box-shadow: 8.71px 8.71px 6px #bebebe, -8.71px -8.71px 6px #ffffff;
   position: relative;
 }
@@ -348,7 +338,6 @@ th {
   left: 0;
   height: 100%;
   width: 100%;
-  border-radius: 10%;
 }
 
 .card-wrapper a:hover {
@@ -363,7 +352,6 @@ th {
   min-height: 250px;
   box-shadow: 0px 10px 8.71px -5px #bebebe;
   display: flex;
-  border-radius: 10%, 10%, 5%, 5%;
 }
 
 .card-contents {

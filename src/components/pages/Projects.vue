@@ -11,59 +11,65 @@
 </template>
 
 <script>
-import TimelineCard from '../molecules/TimelineCard.vue'
+import TimelineCard from "../molecules/TimelineCard.vue";
 
 export default {
   components: { TimelineCard },
-  name: 'Project',
-  data(){
-      return {
-        projects: [
-            {
-                id:1,
-                startMonth:"YYYY/MM",
-                title:"ああああああああ",
-                overview:"overview",
-                role:"role",
-                detail: `ああああああああああああ
+  name: "Project",
+  data() {
+    return {
+      projects: [
+        {
+          id: 1,
+          startMonth: "YYYY/MM",
+          title: "ああああああああ",
+          overview: "overview",
+          role: "role",
+          detail: `ああああああああああああ
                 ああああああああああああああああああ
                 ああああああああああああああああああ
                 ああああああああああああああああああ
-                ああああああああああああああああああ`
-            },
-            {
-                id:2,
-                startMonth:"YYYY/MM",
-                title:"いいいいいいいいい",
-                overview:"overview",
-                role:"role",
-                detail: `いいいいいいいいいいいいいいいいいいいいいいいいいいいい
+                ああああああああああああああああああ`,
+        },
+        {
+          id: 2,
+          startMonth: "YYYY/MM",
+          title: "いいいいいいいいい",
+          overview: "overview",
+          role: "role",
+          detail: `いいいいいいいいいいいいいいいいいいいいいいいいいいいい
                 いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
                 いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい
-                いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい`
-            }
-        ]
-      }
-  }
- 
-}
+                いいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいいい`,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style scoped>
 ul {
-    margin-top:1em;
-    margin-bottom:2em;
-    width: 80%;
-    position:relative;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  width: 90%;
+  position: relative;
+}
+@media screen and (max-width: 896px) {
+  .ul {
+    width: 100%;
+  }
 }
 
-ul:before {
-    content: '';
+@media screen and (min-width: 897px) {
+  ul:before {
+    content: "";
     position: absolute;
     width: 5px;
-    margin-top:1em;
-    left:19.5em;
+    margin-top: 1em;
+    left: 19.5em;
     background: #2a2a2a;
     height: 100%;
+  }
 }
 </style>

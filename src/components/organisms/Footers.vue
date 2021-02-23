@@ -32,7 +32,7 @@ export default {
         },
         {
           icon: "envelope",
-          url: "",
+          url: "https://docs.google.com/forms/d/e/1FAIpQLSfgzXIcl44j6_PYIZtqwZzNsxshL49gG7UGk93tA32dv2_uCw/viewform",
         },
       ]
     };
