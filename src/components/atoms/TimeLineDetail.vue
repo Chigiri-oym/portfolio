@@ -19,7 +19,7 @@ export default {
 <style>
 .card-detail {
 text-align: left;
-white-space: pre-wrap;
+white-space: pre-line;
 word-wrap: break-word;
 padding: 0.5em;
 }

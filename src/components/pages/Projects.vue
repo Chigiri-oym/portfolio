@@ -2,8 +2,8 @@
   <div class="main">
     <h1>Projects</h1>
     <p>参画プロジェクトなど</p>
-    <ul v-for="project in projects" v-bind:key="project.id">
-      <li>
+    <ul>
+      <li v-for="project in projects" v-bind:key="project.id">
         <timeline-card :project="project"></timeline-card>
       </li>
     </ul>
@@ -50,8 +50,20 @@ export default {
 </script>
 
 <style scoped>
-ul{
+ul {
     margin-top:1em;
     margin-bottom:2em;
+    width: 80%;
+    position:relative;
+}
+
+ul:before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    margin-top:1em;
+    left:19.5em;
+    background: #2a2a2a;
+    height: 100%;
 }
 </style>
