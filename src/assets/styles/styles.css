@@ -20,6 +20,9 @@ body,
   flex: 1;
 }
 
+a {
+  text-decoration: none;
+}
 /**
 ** header 
 **/
@@ -123,6 +126,7 @@ nav ul li:hover {
   nav ul li {
     display: block;
     text-align: center;
+    padding: 0.5em;
   }
 
   .hidden {
@@ -161,7 +165,6 @@ h1 {
 }
 
 .card a {
-  text-decoration: none;
   position: absolute;
   display: table-cell;
   vertical-align: middle;
@@ -220,6 +223,7 @@ h1 {
     grid-auto-rows: minmax(100px, auto);
     gap: 30px;
     margin-top: 2em;
+    margin-bottom: 2em;
   }
 
   .card {
@@ -262,12 +266,10 @@ h1 {
 }
 
 .table-content a {
-  text-decoration: none;
   transition: all 0.5s;
 }
 
 .table-content a:hover {
-  text-decoration: none;
   color: #e0e0e0;
   background-color: #2a2a2a;
   box-shadow: 5px 0px 3px 2px #2a2a2a;
@@ -293,19 +295,22 @@ th {
 
   table {
     margin-top: 1em;
-    border:1px solid #2a2a2a;
+
   }
 
   th {
     color: #e0e0e0;
     background-color: #2a2a2a;
-    font-size: 1em;
+    font-size: 0.8em;
+    padding-right: 0.2em;
   }
 
   td {
-    border-bottom: 1px solid #2a2a2a;
+    border-bottom:1px solid #2a2a2a;
     text-align: left;
     font-size: 1em;
+    padding-left: 0.2em;
+    white-space: pre-line;
   }
 }
 
@@ -330,7 +335,6 @@ th {
 }
 
 .card-wrapper a {
-  text-decoration: none;
   display: table-cell;
   vertical-align: middle;
   position: absolute;
@@ -369,6 +373,7 @@ th {
 .card-detail {
   font-size: 1em;
   text-align: left;
+  padding-left: 0em;
 }
 
 @media screen and (max-width: 896px) {
@@ -411,7 +416,6 @@ footer p {
 
 .footer-icon a {
   background-color: #2a2a2a;
-  text-decoration: none;
 }
 
 .footer-icon svg {

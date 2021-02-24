@@ -7,25 +7,28 @@
                :work="work"
                :key="index"></work-card>
     </div>
+    <return-to-home></return-to-home>
   </div>
 </template>
 
 <script>
+import ReturnToHome from '../atoms/ReturnToHome.vue';
 import WorkCard from '../molecules/WorkCard.vue'
 
 export default {
   name: 'works',
    components: {
-    WorkCard
+    WorkCard,
+    ReturnToHome
   },
   data() {
     return {
       works: [
         {
-          name: "my portofolio",
+          name: "portofolio",
           image: require("@/assets/img/portfolio.png"),
           url: "https://github.com/Chigiri-oym/portfolio",
-          detail: "個人の自己紹介サイトです。つまり、このサイトのことです。",
+          detail: "Chigiriの自己紹介サイトです。つまり、このサイトのことです。vue.js使いました。",
         },
         {
           name: "Comming Soon",

@@ -16,10 +16,13 @@
         </td>
       </tr>
     </table>
+    <return-to-home></return-to-home>
   </div>
 </template>
 <script>
+import ReturnToHome from '../atoms/ReturnToHome.vue'
 export default {
+  components: { ReturnToHome },
   name: 'About',
   data(){
   return {
@@ -46,12 +49,12 @@ export default {
       },
       {
         key: 'スキル概要',
-        value: `要件定義〜テストまで経験済み
+        value: `要件定義〜テストまで経験
                 8名程度のプロジェクトのリーダー経験あり`,
-        link: ''
+        link: null
       },
       {
-        key: '好きな分野',
+        key: '直近の業務',
         value: 'DB定義やSQL、データ移行など',
         link: null
       },

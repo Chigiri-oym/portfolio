@@ -25,6 +25,7 @@
       >
       </skill-card>
     </div>
+    <return-to-home></return-to-home>
   </div>
 </template>
 
@@ -49,9 +50,10 @@ tr td {
 <script>
 import SkillCard from "../molecules/SkillCard.vue";
 import Stars from "../atoms/Stars.vue";
+import ReturnToHome from '../atoms/ReturnToHome.vue'
 
 export default {
-  components: { SkillCard, Stars },
+  components: { SkillCard, Stars, ReturnToHome},
   name: "skill",
   data() {
     return {
@@ -153,6 +155,12 @@ export default {
             {
               id: 11,
               name: "基本情報技術者",
+              year: null,
+              level: null,
+            },
+            {
+              id: 12,
+              name: "TOEIC:865点",
               year: null,
               level: null,
             },

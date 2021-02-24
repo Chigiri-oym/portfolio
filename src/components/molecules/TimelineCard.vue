@@ -73,7 +73,7 @@ export default {
 }
 
 .timeline-wrapper {
-  width: 100%;
+  width:100%;
   margin-left: 2em;
   position: relative;
   box-shadow: 8.71px 8.71px 6px #bebebe, -8.71px -8.71px 6px #ffffff;
@@ -82,10 +82,11 @@ export default {
 }
 @media screen and (max-width: 896px) {
   .timeline-wrapper {
-    width: 100%;
+    width: 85%;
     display: block;
     margin-top: 1em;
-    margin-right: 1em;
+    margin-right: 1.5em;
+    margin-left: 1.5em;
   }
 }
 
