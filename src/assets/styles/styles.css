@@ -73,6 +73,7 @@ nav ul li:hover {
     position: relative;
     display: inline-flex;
     width: 100%;
+    padding:0;
   }
 
   .header_logo {
@@ -92,6 +93,7 @@ nav ul li:hover {
 
   .header-icons svg {
     background-color: #2a2a2a;
+    padding: 0.5em;
   }
 
   .header-icons svg path {
