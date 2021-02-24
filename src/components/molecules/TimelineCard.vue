@@ -82,10 +82,10 @@ export default {
 }
 @media screen and (max-width: 896px) {
   .timeline-wrapper {
-    width: 85%;
+    width: 90%;
     display: block;
     margin-top: 1em;
-    margin-right: 1.5em;
+    margin-right: 2em;
     margin-left: 1.5em;
   }
 }

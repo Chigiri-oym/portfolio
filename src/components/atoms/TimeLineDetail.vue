@@ -1,7 +1,7 @@
 <template>
   <div>
     <p class="card-detail">■{{ title }}</p>
-    <p class="card-detail"><span></span>{{ detail }}</p>
+    <p class="card-detail">{{ detail }}</p>
   </div>
 </template>
 
@@ -21,9 +21,10 @@ export default {
   white-space: pre-line;
   word-wrap: break-word;
   padding: 0.5em;
+}@media screen and (max-width: 480px) {
+    .card-detail {
+        line-height: 1.5;
+    }
 }
 
-.card-detail span {
-  margin-left: 1em;
-}
 </style>
